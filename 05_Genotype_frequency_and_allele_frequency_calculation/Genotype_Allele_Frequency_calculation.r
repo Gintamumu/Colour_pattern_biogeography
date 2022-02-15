@@ -3,13 +3,13 @@
 #### Trait frequency is applied for GLS/lm/Pearson correlation analysis #######
 #### Allele frequency is applied for Cline analysis ###########################
 #### Three datasets including research, citizen, and research + citizen combined could be calculated separately for ###
-#### Step 8. Residual_Map of Trait frequency between research and citizen datasets.###
+#### Residual_Map of Trait frequency between research and citizen datasets.###
 
-setwd("/data/martin/genomics/analyses/Danaus_SDM/03_value_check/4DB/")
+setwd("/file_location/")
 
-file_dir <- "/data/martin/genomics/analyses/Danaus_SDM/03_value_check/4DB/"
+file_dir <- "/file_location/"
 
-file_prefix <- "03_Research_citizen_combine_17094.4DegreeBlocks"
+file_prefix <- "your_file.4DegreeBlocks"
 
 records <- read.csv(paste0(file_dir, file_prefix,".csv"), header = T, stringsAsFactors = F)
 
@@ -68,4 +68,4 @@ write.csv(records, paste0(file_prefix,".frequency_processed.csv"), row.names=F, 
 
 ### Caution: The file covers all 4 degree block cells from the whole world. It will lead to both NA cells and cells with frequency 
 ### value shown on whole frequency map, a bad plot, so you have to standardize the file by removing all frequency NA individuals.#####
-### Origin file could be saved for step 8. Residual_Map of Trait frequency between research and citizen datasets.####
+### Origin file could be saved for Residual_Map of Trait frequency between research and citizen datasets.####
