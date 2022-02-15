@@ -8,7 +8,6 @@ Script for paper "Global biogeography of warning colouration in the butterfly Da
 5. Trait/phenotype/genotype frequency, allele frequency and sex frequency calculation
 6. Trait/phenotype/genotype frequency, sex frequency and number of records distribution maps
 7. Allele frequency maps and Transects file made for cline analysis
-8. GLS (generalized least-squares) analysis
-9. Residual Map of Trait frequency between research and citizen datasets
-10. Cline analysis
-
+8. Cline analysis
+9. GLS (generalized least-squares) analysis
+10. Residual Map of Trait frequency between research and citizen datasets
