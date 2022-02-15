@@ -7,7 +7,8 @@
 ###Ground Colour (B-:present/Dark,Bb:intermediate,bb:absent/light)
 ###Forewing Tip (C-:absent,Cc:intermediate,cc:present)
 
-### Input file example 
+### Input file example
+### Title and content ###
 ### Site	Sex	Total 	A-	Aa	aa	C-	Cc	cc	B-	bb	latitude	longitude	decimalLatitude	decimalLongitude	collector	dataset
 ### 1	m	23	23	0	0	0	0	23	0	23	6.06N	100.23E	6.1	100.383	dass	Smith field notes
 ### 1	f	20	20	0	0	0	0	20	0	20	6.06N	100.23E	6.1	100.383	dass	Smith field notes
