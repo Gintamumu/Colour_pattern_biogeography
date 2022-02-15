@@ -1,6 +1,4 @@
-# cd /data/martin/genomics/analyses/Danaus_SDM/07_cline/
-# sconda maxent_env
-# R
+##### Transect Selection ####
 
 #Install
 # install.packages("ggplot2")
@@ -16,11 +14,11 @@ library(geosphere)
 
 cap <- function(x, max) ifelse(x <= max, x, max)
 
-file_prefix <- "GBIF_Dchrysippus_20201206_20210721_DAS_records_Auguest2021_curated"
+## file_prefix <- "your_file_4DB"
 
-# records_all <- read.csv(paste0(file_prefix,".processed.csv"), header = T, stringsAsFactors = F)
+## records_all <- read.csv(paste0(file_prefix,".processed.csv"), header = T, stringsAsFactors = F)
 
-records_4deg <- read.csv("citizen_reserch_combine_4DB_02_8_order_edit01.csv", header = T, stringsAsFactors = F)
+records_4deg <- read.csv("4DB.csv", header = T, stringsAsFactors = F)
 
 
 
@@ -62,10 +60,6 @@ whole_range <- coord_map("mercator", xlim = c(-30,160), ylim = c(-50,50))
 
 cols = c("BLUE", "GREEN", "YELLOW","ORANGE","RED")
 
-
-
-
-
 trait <- 1-records_4deg$hindwingWhite_mean
 n <- cap(records_4deg$hindwingWhite_n, 12)
 trait_name <- "Hindwing white freq."
@@ -100,7 +94,7 @@ plot_map + whole_range +
 
 library(geosphere)
 
-#define transects
+#define transects 1 to 5
 transects <- as.data.frame(rbind(c(lon_start=-14,   lat_start=16,  lon_end=38,  lat_end=-8), #Central Africa
                                  c(lon_start=25,  lat_start=-25, lon_end=40,  lat_end=0),  #South East Africa
                                  c(lon_start=10,  lat_start=10,   lon_end=20,  lat_end=-30),#South West Africa
