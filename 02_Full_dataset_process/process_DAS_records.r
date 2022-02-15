@@ -4,7 +4,6 @@
 ###01.Dchrysippus_DAS_records_Auguest2021_curated_20211124_secondCheck_rm291.csv
 ####Different Format from citizen dataset####
 
-
 ###01.process_DAS_records.r####
 
 setwd("/file_location/")
@@ -30,10 +29,6 @@ records$Aa <- 0
 records$Cc <- 0
 
 ## add separate columns for the number of males and females
-## records$both <- ifelse(records$Sex == "mf", 1, 0)
-## records$male <- ifelse(records$Sex == "m", 1, 0)
-## records$female <- ifelse(records$Sex == "f", 1, 0)
-
 records$male <- ifelse(records$Sex == "m" | records$Sex == "mf", 1, 0)
 records$female <- ifelse(records$Sex == "f" | records$Sex == "mf", 1, 0)
 
