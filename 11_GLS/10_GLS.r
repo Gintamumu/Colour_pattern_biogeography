@@ -3,10 +3,15 @@
 ####### Vrettos M, Reynolds C, Amar A. Malar stripe size and prominence in peregrine falcons vary #######
 ####### positively with solar radiation: support for the solar glare hypothesis[J]. Biology letters, 2021, 17(6): 20210116.#######
 
+
 setwd("/data/martin/genomics/analyses/Danaus_SDM/04_nlm/01_correlation/")
 
 
+##################################################
 ##### a. Read in data and extract scores #####
+#################################################
+
+
 
 #### NA frequency of each phenotype of file ought to be removed#####
 
@@ -39,7 +44,12 @@ jnk=round(cor(na.omit(scores)),digits = 2)
 write.csv(jnk, file = "Correlation_traitsv2.csv")
 
 
+
+
+##################################################
 ##### b. Correlation plot #####
+##################################################
+
 
 # Correlations between variables
 
@@ -160,8 +170,14 @@ library(fmsb)
 
 setwd("/data/martin/genomics/analyses/Danaus_SDM/04_nlm/02_AIC/")
 
-
+     
+     
+     
+     
+##################################################
 ####### c. Checking for spatial autocorrelation #######
+##################################################
+     
 
 # Standardize variables
 
@@ -267,8 +283,10 @@ diag(dists.inv) <- 0
 Moran.I(perfal$groundColour.model.residuals, dists.inv, scaled=T, na.rm=T)
 
 
-
+##################################################
 ####### d. GLS models #######
+##################################################
+     
 
 library(nlme)
 library(lme4)
@@ -360,8 +378,10 @@ modavg(cand.set = Cand.mod.groundColour_bb, modnames = Model.names, parm = "Bio0
 
 
 
-
+##################################################
 ###### e. Forest plot showing GLS model outputs ######
+##################################################
+     
 
 library(ggplot2)
 
@@ -485,9 +505,9 @@ dev.off()
 
 
 
-
+####################################################################################################
 #################### f.Scatterplots showing linear relationships ###################
-
+####################################################################################################
 library(ggplot2)
 library(scales)
 library(gridExtra)
