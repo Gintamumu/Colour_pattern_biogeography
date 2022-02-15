@@ -1,6 +1,7 @@
-# cd /data/martin/genomics/analyses/Danaus_SDM/07_cline/DC/
-# sconda maxent_env
-# R
+### Best cline model selection ###
+
+### this script is edited based on an example script “men12209-sup-0004-hzarExampleScript.R” of Hzar paper “hzar: hybrid zone analysis using an R software package” 
+### (https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2F1755-0998.12209&file=men12209-sup-0004-hzarExampleScript.R).
 
 ## Load the package
 library(hzar);
