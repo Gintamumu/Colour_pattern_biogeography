@@ -1,5 +1,5 @@
 
-file_prefix <- "your file"
+file_prefix <- "your_file"
 
 ###header=T: 1st line as header
 ###stringsAsFactors = F: not convert character strings into factors, which may make it easy to do such things as replace values.
