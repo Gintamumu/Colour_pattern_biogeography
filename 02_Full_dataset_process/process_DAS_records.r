@@ -12,6 +12,11 @@ file_dir <- "/file_location/"
 file_prefix <- "input_file_prefix"
 records <- read.csv(paste0(file_dir, file_prefix,".csv"), header = T, stringsAsFactors = F)
 
+###Identification of D. chrysippus genotypes at the A, B and C loci###
+###Hindwing White (A-:absent,Aa:partial,aa:present)
+###Ground Colour (B-:present/Dark,Bb:intermediate,bb:absent/light)
+###Forewing Tip (C-:absent,Cc:intermediate,cc:present)
+
 #first turn all NA vlalues to zero, so we can add without problems
 for (trait in c("aa", "Aa", "A.", "bb", "B.", "cc", "Cc", "C.")){
     records[is.na(records[,trait]),trait] <- 0
