@@ -1,14 +1,15 @@
 ##### 1. Full data process ##### 
 
 #####Four Full datasets#####
-###01.Dchrysippus_DAS_records_Auguest2021_curated_20211124_secondCheck_rm291.csv####Different Format from other three####
+###01.Dchrysippus_DAS_records_Auguest2021_curated_20211124_secondCheck_rm291.csv
+####Different Format from citizen dataset####
 
 
 ###01.process_DAS_records.r####
 
-setwd("/data/martin/genomics/analyses/Danaus_SDM/01_Occurrence/")
-file_dir <- "/data/martin/genomics/analyses/Danaus_SDM/01_Occurrence/"
-file_prefix <- "Dchrysippus_DAS_records_Auguest2021_curated_20211124_secondCheck_rm291"
+setwd("/file_location/")
+file_dir <- "/file_location/"
+file_prefix <- "input_file_prefix"
 records <- read.csv(paste0(file_dir, file_prefix,".csv"), header = T, stringsAsFactors = F)
 
 #first turn all NA vlalues to zero, so we can add without problems
