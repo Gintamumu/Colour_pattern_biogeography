@@ -1,11 +1,8 @@
-# cd /data/martin/genomics/analyses/Danaus_SDM/07_cline/
-# sconda maxent_env
-# R
-
+### Initial Cline analysis ###
 
 library(hzar);
 
-# transect_data <- read.csv("GBIF_Dchrysippus_20201206_20210721_DAS_records_Auguest2021_curated.processed.4DegreeBlocks.transect1.csv", as.is=T);
+# transect_data <- read.csv("your_file.processed.4DegreeBlocks.transect1.csv", as.is=T);
 
 ######Generate a hzar.obsData object using summary data about each locality#######
 # fwdata <- hzar.doMolecularData1DPops(transect_data$position,
@@ -72,19 +69,10 @@ library(hzar);
 #######################################################################################
 
 
-
-
-
-
-
-
-
-
-
-
+### Example ####
 ### hindwingWhite transect1_2_1
 
-transect_data <- read.csv("GBIF_Dchrysippus_20201206_20210721_DAS_records_Auguest2021_curated.processed.4DegreeBlocks.transect1_2_1c.csv", as.is=T);
+transect_data <- read.csv("GBIF_Dchrysippus_20201206_20210721_DAS_records_Auguest2021_curated.processed.4DegreeBlocks.transect1.csv", as.is=T);
 
 hwdata <- hzar.doMolecularData1DPops(transect_data$transect_pos,
                              transect_data$hindwingWhite_mean,
