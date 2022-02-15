@@ -1,5 +1,5 @@
 
-#### 3. Convert_full_data_to_4DB_data #####
+#### Convert_full_data_to_4DB_data #####
 
 #a function that divides the world into blocks of a given size
 #it returns the longitude and latitude 'name' of each block and its midpoint coordinates
@@ -43,12 +43,8 @@ group_records_into_blocks <- function(longitude, latitude, blocksize, block_data
     lapply(1:nrow(block_data), function(i) which(block_assignment_long == block_data[i,"block_name_long"] &
                                                  block_assignment_lat == block_data[i,"block_name_lat"]))
     }
- 
 
-
-# file_prefix <- "4DB_input"
-# file_prefix <- "GBIF_Dchrysippus_20201206_20210721.processed"
-file_prefix <- "01_Research_GBIF_DAS_Martin_Kenya_11627_4_coordinate_exchange"
+file_prefix <- "your_file.processed"
 
 records <- read.csv(paste0(file_prefix,".csv"), header = T, stringsAsFactors = F)
 
@@ -65,6 +61,10 @@ rows_by_block <- group_records_into_blocks(records$decimalLongitude, records$dec
 # We have already recorded which records fall with in each block, so now we just sum
 # the number of individuals with each trait for each block
 
+###Hindwing White (A-:absent,Aa:partial,aa:present)
+###Ground Colour (B-:present/Dark,Bb:intermediate,bb:absent/light)
+###Forewing Tip (C-:absent,Cc:intermediate,cc:present)           
+           
 traits = c("Total", "male", "female", "aa", "A.", "bb", "B.", "cc", "C.")
 
 counts_by_block <- t(sapply(rows_by_block, function(rows) apply(records[rows, traits], 2, sum, na.rm=T)))
