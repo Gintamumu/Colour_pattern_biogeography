@@ -15,11 +15,11 @@ library(geosphere)
 
 cap <- function(x, max) ifelse(x <= max, x, max)
 
-file_prefix <- "03_Research_citizen_combine_17094.4DegreeBlocks_rmEnvValue.frequency_processed_groundcolourB"
+file_prefix <- "your_file.4DegreeBlocks_rmEnvValue.frequency_processed_groundcolourB"
 
 # records_all <- read.csv(paste0(file_prefix,".processed.csv"), header = T, stringsAsFactors = F)
 
-records_4deg <- read.csv("03_Research_citizen_combine_17094.4DegreeBlocks_rmEnvValue.frequency_processed_groundcolourB.csv", header = T, stringsAsFactors = F)
+records_4deg <- read.csv("your_file.4DegreeBlocks_rmEnvValue.frequency_processed_groundcolourB.csv", header = T, stringsAsFactors = F)
 
 
 
