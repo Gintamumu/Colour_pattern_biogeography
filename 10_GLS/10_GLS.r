@@ -1,4 +1,4 @@
-####### 7.GLS (generalized least-squares) analysis ########
+####### GLS (generalized least-squares) analysis ########
 ####### GLS script reference paper #########
 ####### Vrettos M, Reynolds C, Amar A. Malar stripe size and prominence in peregrine falcons vary #######
 ####### positively with solar radiation: support for the solar glare hypothesis[J]. Biology letters, 2021, 17(6): 20210116.#######
