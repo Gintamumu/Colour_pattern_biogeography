@@ -1,8 +1,4 @@
-##### 1. Full data process ##### 
-
-#####Four Full datasets#####
-###01.Dchrysippus_DAS_records_Auguest2021_curated_20211124_secondCheck_rm291.csv
-####Different Format from citizen dataset####
+##### Full museum data process ##### 
 
 ###01.process_DAS_records.r####
 
