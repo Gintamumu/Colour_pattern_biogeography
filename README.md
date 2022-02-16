@@ -13,9 +13,13 @@ Script for paper "Global biogeography of warning colouration in the butterfly Da
 10. GLS (generalized least-squares) analysis
 11. Residual Map of Trait frequency between research and citizen datasets
 
-Most of the core codes were contributed by Simon Martin and part by Wanzhen Liu.
+
 
 # Requirements
 
 # Data
 
+# Acknowledgements
+Most of the core codes were contributed by Simon Martin and part by Wanzhen Liu.
+
+Some code for Cline and GLS analysis adapted from HZAR paper https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12209 and https://royalsocietypublishing.org/doi/10.1098/rsbl.2021.0116. 
