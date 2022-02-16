@@ -14,3 +14,8 @@ Script for paper "Global biogeography of warning colouration in the butterfly Da
 11. Residual Map of Trait frequency between research and citizen datasets
 
 Most of the core codes were contributed by Simon Martin and part by Wanzhen Liu.
+
+# Requirements
+
+# Data
+
