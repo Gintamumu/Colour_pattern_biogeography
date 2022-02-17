@@ -12,7 +12,7 @@ Script for paper "Global biogeography of warning colouration in the butterfly Da
 9. Cline analysis
 10. GLS (generalized least-squares) analysis
 11. Residual Map of Trait frequency between research and citizen datasets
-
+12. Polymorphism of Trait frequency and location identification
 
 
 # Requirements
