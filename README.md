@@ -20,6 +20,6 @@ Script for paper "Global biogeography of warning colouration in the butterfly Da
 # Data
 
 # Acknowledgements
-Most of the core codes were contributed by Simon Martin and part by Wanzhen Liu.
+Most of the core codes were contributed by Simon Martin(https://github.com/simonhmartin) and part by Wanzhen Liu.
 
 Some code for Cline and GLS analysis adapted from HZAR paper https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12209 and https://royalsocietypublishing.org/doi/10.1098/rsbl.2021.0116. 
