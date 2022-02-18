@@ -1,5 +1,5 @@
-# DC_COLOUR_PATTERN_FACTOR
-Script for paper "Global biogeography of warning colouration in the butterfly Danaus chrysippus"
+# Analysis of biogeography of colour patterns in the butterfly Danaus chrysippus
+These script accompany the paper "Global biogeography of warning colouration in the butterfly Danaus chrysippus" by Liu et al. (link to be added).
 
 1. Number and spelling mistakes check
 2. Full data process 
