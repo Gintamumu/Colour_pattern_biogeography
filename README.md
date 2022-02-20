@@ -49,7 +49,7 @@ png
 Python:
 numpy,
 pandas,
-matplotlib,
+matplotlib
 
 Arcmap
 
