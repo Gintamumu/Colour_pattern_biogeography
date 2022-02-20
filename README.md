@@ -40,6 +40,12 @@ rworldmap,
 scales,
 corrplot,
 fmsb,
+MuMIn,
+ggpubr,
+hzar,
+doMC,
+png
+
 
 Python:
 
