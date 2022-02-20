@@ -46,8 +46,10 @@ hzar,
 doMC,
 png
 
-
 Python:
+numpy,
+pandas,
+matplotlib,
 
 Arcmap
 
