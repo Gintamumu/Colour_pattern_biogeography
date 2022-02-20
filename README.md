@@ -27,8 +27,21 @@ ggplot2
 mapproj
 geosphere
 Viridis (Colorblind-Friendly Color Maps for R)
+PerformanceAnalytics
+AICcmodavg
+ape
+gridExtra
+lme4
+nlme
+raster
+RColorBrewer
+rworldxtra
+rworldmap
+scales
+corrplot
+fmsb
 
-Python
+Python:
 
 Arcmap
 
