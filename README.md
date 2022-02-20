@@ -17,29 +17,29 @@ These script accompany the paper "Global biogeography of warning colouration in 
 
 # Requirements
 R:
-raster
-rgeos
-rgdal
-maptools
-wrld_simpl
-maps
-ggplot2
-mapproj
-geosphere
-Viridis (Colorblind-Friendly Color Maps for R)
-PerformanceAnalytics
-AICcmodavg
-ape
-gridExtra
-lme4
-nlme
-raster
-RColorBrewer
-rworldxtra
-rworldmap
-scales
-corrplot
-fmsb
+raster,
+rgeos,
+rgdal,
+maptools,
+wrld_simpl,
+maps,
+ggplot2,
+mapproj,
+geosphere,
+Viridis (Colorblind-Friendly Color Maps for R),
+PerformanceAnalytics,
+AICcmodavg,
+ape,
+gridExtra,
+lme4,
+nlme,
+raster,
+RColorBrewer,
+rworldxtra,
+rworldmap,
+scales,
+corrplot,
+fmsb,
 
 Python:
 
